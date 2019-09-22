@@ -2,10 +2,10 @@ import React, { memo } from 'react'
 
 import { Link, Icon } from '../../styled/Social'
 
-const SocialIcon = ({ src, href }) => {
+const SocialIcon = ({ src, href, isMobile }) => {
     return (
-        <Link href={href} target="_blank" rel="noopener noreferrer">
-            <Icon alt="icon" src={src} />
+        <Link isMobile={isMobile} href={href} target="_blank" rel="noopener noreferrer">
+            <Icon alt="icon" src={src} isMobile={isMobile} />
         </Link>
     )
 }

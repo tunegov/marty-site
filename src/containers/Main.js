@@ -11,12 +11,12 @@ import Picture from '../components/Main/Picture'
 const Main = (props) => {
     return (
         <>
-            <Logo />
-            <Social vertical absolute />
+            <Logo isMobile={props.isMobile} />
             <Wrapper isMobile={props.isMobile}>
                 <Text isMobile={props.isMobile} />
                 <Picture isMobile={props.isMobile} />
             </Wrapper>
+            <Social vertical absolute isMobile={props.isMobile} />
         </>
     )
 }

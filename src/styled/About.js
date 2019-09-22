@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
     position: relative;
@@ -7,22 +7,42 @@ export const Wrapper = styled.div`
 
 export const TextWrapper = styled.div`
     color: white;
-    position: absolute;
-    font-size: 1.2vw;
-    top: 4vh;
-    left: 2vw
+
+    ${props => props.isMobile ? css`
+        font-size: 1em;
+        text-align: justify;
+        margin-bottom: 5vh;
+    ` : `
+        font-size: 1.2vw;
+        position: absolute;
+        top: 4vh;
+        left: 2vw;
+    `}
 `
 
 export const TextTitle = styled.h2`
     color: white;
     font-size: 1.7vw;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
+
+    ${props => props.isMobile ? css`
+        font-size: 1.5em;
+        text-align: center;
+    ` : `
+        font-size: 1.7vw;
+    `}
 `
 
 export const TextBlock = styled.div`
-    width: 40vw;
     position: relative;
+
+    ${props => props.isMobile ? css`
+        width: 100%;
+        padding: 0 5vw;
+    ` : `
+        width: 40vw;
+    `}
 
 `
 
@@ -41,15 +61,30 @@ export const RightImage = styled.img`
 `
 
 export const VideoWrapper = styled.iframe`
-    width: 100%;
-    height: 100%;
+
+    ${props => props.isMobile ? css`
+        width: 100%;
+        height: 45vw;
+        padding: 0 5vw;
+    ` : `
+        width: 100%;
+        height: 100%;
+    `}
+
 `
 
 export const Content = styled.div`
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 10vw;
-    z-index: 999;
-    position: relative;
+    ${props => props.isMobile ? css`
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    ` : css`
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 10vw;
+        z-index: 999;
+        position: relative;
+    `}
+
 `

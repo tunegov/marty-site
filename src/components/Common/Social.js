@@ -16,11 +16,28 @@ const Social = (props) => {
             vertical={props.vertical}
             width={props.width}
             absolute={props.absolute}
+            isMobile={props.isMobile}
         >
-            <SocialIcon href={instagramUrl} src={instagramIcon} />
-            <SocialIcon href={youtubeUrl} src={youtubeIcon} />
-            <SocialIcon href={vkUrl} src={vkIcon} />
-            <SocialIcon href={fbUrl} src={facebookIcon} />
+            <SocialIcon
+                href={instagramUrl}
+                src={instagramIcon}
+                isMobile={props.isMobile}
+            />
+            <SocialIcon
+                href={youtubeUrl}
+                src={youtubeIcon}
+                isMobile={props.isMobile}
+            />
+            <SocialIcon
+                href={vkUrl}
+                src={vkIcon}
+                isMobile={props.isMobile}
+            />
+            <SocialIcon
+                href={fbUrl}
+                src={facebookIcon}
+                isMobile={props.isMobile}
+            />
         </Wrapper>
     )
 }

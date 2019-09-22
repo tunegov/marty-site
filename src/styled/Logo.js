@@ -13,5 +13,9 @@ export const Icon = styled.img`
     width: auto;
     height: 4vw;
     object-fit: contain;
+
+    ${props => props.isMobile && css`
+        height: 4vh;
+    `}
 `
 

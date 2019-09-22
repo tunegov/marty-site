@@ -35,7 +35,7 @@ const TextMain = (props) => {
                         </linearGradient>
                     </defs>
                 </svg>
-                <NumberText href={`tel:${PHONE}`}>{PHONE}</NumberText>
+                <NumberText isMobile={props.isMobile} href={`tel:${PHONE}`}>{PHONE}</NumberText>
             </NumberBlock>
             <InfoBlock isMobile={props.isMobile}>
                 <InfoText isMobile={props.isMobile}>{INFO_1}</InfoText>

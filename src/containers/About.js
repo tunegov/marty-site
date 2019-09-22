@@ -8,16 +8,16 @@ import Video from '../components/About/Video'
 
 import { Wrapper, Content } from '../styled/About'
 
-const About = () => {
+const About = (props) => {
     return (
-        <Wrapper>
-            <RightImage />
-            <LeftImage />
-            <Content>
-                <AboutText />
+        <Wrapper isMobile={props.isMobile}>
+            <RightImage isMobile={props.isMobile} />
+            <LeftImage isMobile={props.isMobile} />
+            <Content isMobile={props.isMobile}>
+                <AboutText isMobile={props.isMobile} />
                 <div />
                 <div />
-                <Video />
+                <Video isMobile={props.isMobile} />
             </Content>
         </Wrapper>
     )

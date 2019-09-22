@@ -4,10 +4,11 @@ import { Wrapper, Icon } from '../../styled/Logo'
 
 import logoBig from '../../resources/logoBig.png'
 
-const Logo = () => {
+const Logo = (props) => {
     return (
         <Wrapper>
             <Icon
+                isMobile={props.isMobile}
                 src={logoBig}
             />
         </Wrapper>

@@ -7,19 +7,22 @@ import Phone from '../styled/Phone'
 import Social from '../components/Common/Social'
 import DesignerLogo from '../components/Footer/DesignerLogo'
 
-const Footer = () => {
+const Footer = (props) => {
     return (
-        <Wrapper>
-            <FooterSection left>
-                <DesignerLogo />
-            </FooterSection>
-            <FooterSection>
-                <Phone href={`tel:${PHONE}`}>{PHONE}</Phone>
-            </FooterSection>
-            <FooterSection right>
-                <Social width="null" />
-            </FooterSection>
-        </Wrapper>
+        <>
+            <Social isMobile={props.isMobile} width="null" />
+            <Wrapper isMobile={props.isMobile}>
+                <FooterSection left isMobile={props.isMobile} >
+                    <DesignerLogo />
+                </FooterSection>
+                <FooterSection isMobile={props.isMobile} >
+                    <Phone isMobile={props.isMobile} href={`tel:${PHONE}`}>{PHONE}</Phone>
+                </FooterSection>
+                <FooterSection right hide={props.isMobile} >
+                    <Social isMobile={props.isMobile} width="null" />
+                </FooterSection>
+            </Wrapper>
+        </>
     )
 }
 

@@ -8,3 +8,5 @@ export const instagramUrl = 'https://www.instagram.com/marty_tv_/'
 export const youtubeUrl = 'https://www.youtube.com/channel/UCL2h5n2vyl25C7DOBDUJ5zQ'
 export const vkUrl = 'https://www.youtube.com/channel/UCL2h5n2vyl25C7DOBDUJ5zQ'
 export const fbUrl = 'https://www.youtube.com/channel/UCL2h5n2vyl25C7DOBDUJ5zQ'
+
+export const designerUrl = 'https://www.instagram.com/zaycev.design/'

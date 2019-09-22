@@ -7,9 +7,11 @@ export const Wrapper = styled.div`
         align-items: center;
     ` : css`
         display: grid;
+        position: relative;
+        z-index: 999;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr 1fr;
-        padding: 0 5vw;
+        padding: 5vh 5vw 20vh 5vw;
     `}
 `
 
@@ -51,7 +53,9 @@ export const NumberText = styled.a`
     color: white;
 
     ${props => props.isMobile && css`
-        font-size: 1em;
+        font-size: 1.4em;
+        left 0;
+        right: 0;
         text-align: center;
     `}
 
@@ -79,7 +83,7 @@ export const InfoBlock = styled.div`
     margin: 10vh auto 0 auto;
 
     ${props => props.isMobile && css`
-        margin: 2vh auto 0 auto;
+        margin: 5vh auto 0 auto;
     `}
 `
 
@@ -101,7 +105,7 @@ export const InfoText = styled.div`
         font-size: .9em;
         text-align: center;
         padding: 0 10px;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
     `}
 `
 
@@ -115,7 +119,8 @@ export const PictureBlock = styled.div`
 
     ${props => props.isMobile && css`
         margin-top: 10vh;
-        width: 90vw
+        height: 90vw
+        width: auto
     `}
 `
 
