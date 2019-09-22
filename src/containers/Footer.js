@@ -10,7 +10,7 @@ import DesignerLogo from '../components/Footer/DesignerLogo'
 const Footer = (props) => {
     return (
         <>
-            <Social isMobile={props.isMobile} width="null" />
+            <Social hide={!props.isMobile} isMobile={props.isMobile} width="null" />
             <Wrapper isMobile={props.isMobile}>
                 <FooterSection left isMobile={props.isMobile} >
                     <DesignerLogo />

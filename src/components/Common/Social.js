@@ -13,6 +13,7 @@ import facebookIcon from '../../resources/facebook.png'
 const Social = (props) => {
     return (
         <Wrapper
+            hide={props.hide}
             vertical={props.vertical}
             width={props.width}
             absolute={props.absolute}

@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
         ${props.width ? 'width: ' + props.width + ';' : ''}
     `}
 
+    ${props => props.hide && 'display: none;'}
     ${props => props.isMobile && !props.absolute && css`
         width: 80vw;
         justify-content: space-around;
