@@ -1,4 +1,4 @@
-export const PHONE = '+380 63 622 5543'
+export const PHONE = '+380 63 622 55 43'
 export const CONTACT_TEXT = 'Свяжитесь с нами, чтобы заказать билет'
 export const INFO_1 = '22 НОЯБРЯ'
 export const INFO_2 = 'VOLUME CLUB'

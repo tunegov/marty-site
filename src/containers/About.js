@@ -11,8 +11,8 @@ import { Wrapper, Content } from '../styled/About'
 const About = (props) => {
     return (
         <Wrapper isMobile={props.isMobile}>
-            <RightImage isMobile={props.isMobile} />
-            <LeftImage isMobile={props.isMobile} />
+            {!props.isMobile && <RightImage />}
+            {!props.isMobile && <LeftImage />}
             <Content isMobile={props.isMobile}>
                 <AboutText isMobile={props.isMobile} />
                 <div />
