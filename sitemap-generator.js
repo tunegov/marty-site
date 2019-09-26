@@ -9,7 +9,7 @@ function generateSitemap() {
     return (
         new Sitemap(router)
             .build("https://www.marty.kiev.ua/")
-            .save("./static/sitemap.xml")
+            .save("./build/static/sitemap.xml")
     );
 }
 
