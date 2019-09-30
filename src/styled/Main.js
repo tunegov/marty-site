@@ -86,8 +86,6 @@ export const NumberIcon = styled.img`
             height: 40px;
         `
     }
-
-
 `
 
 export const ContactText = styled.h2`
@@ -112,12 +110,12 @@ export const InfoBlock = styled.div`
     `}
 `
 
-export const InfoText = styled.div`
+export const InfoText = styled.a`
     min-width: 100px;
     max-width: 200px;
     padding: 0 1.5vw;
     text-align: center;
-    color: white;
+    color: white !important;
     font-size: 1.3em;
     font-weight: 600;
     ${props => props.left && 'text-align: left;'}
@@ -132,6 +130,11 @@ export const InfoText = styled.div`
         padding: 0 10px;
         margin-bottom: 5vh;
     `}
+
+    :hover {
+        color: white;
+        text-decoration: none;
+    }
 `
 
 

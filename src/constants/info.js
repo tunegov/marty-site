@@ -6,6 +6,7 @@ export const INFO_2 = 'VOLUME CLUB'
 export const INFO_3 = '19:00'
 
 export const supportText = 'При поддержке'
+export const clubAddress = 'https://goo.gl/maps/GHYCg5RCcMpXKESy7'
 
 export const instagramUrl = 'https://www.instagram.com/marty_tv_/'
 export const youtubeUrl = 'https://www.youtube.com/channel/UCL2h5n2vyl25C7DOBDUJ5zQ'

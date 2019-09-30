@@ -17,7 +17,8 @@ import {
     INFO_1,
     INFO_2,
     INFO_3,
-    CONCERT_TEXT
+    CONCERT_TEXT,
+    clubAddress
 } from '../../constants/info'
 
 import concertText from '../../resources/concertText.png'
@@ -44,9 +45,30 @@ const TextMain = (props) => {
                 </NumberText>
             </NumberBlock>
             <InfoBlock isMobile={props.isMobile}>
-                <InfoText isMobile={props.isMobile}>{INFO_1}</InfoText>
-                <InfoText isMobile={props.isMobile} border>{INFO_2}</InfoText>
-                <InfoText isMobile={props.isMobile}>{INFO_3}</InfoText>
+                <InfoText
+                    // href={clubAddress}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    isMobile={props.isMobile}
+                >
+                    {INFO_1}
+                </InfoText>
+                <InfoText
+                    href={clubAddress}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    isMobile={props.isMobile}
+                    border
+                >{INFO_2}
+                </InfoText>
+                <InfoText
+                    // href={clubAddress}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    isMobile={props.isMobile}
+                >
+                    {INFO_3}
+                </InfoText>
             </InfoBlock>
         </TextBlock>
     )
