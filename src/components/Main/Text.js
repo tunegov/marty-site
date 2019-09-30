@@ -17,6 +17,7 @@ import {
     INFO_1,
     INFO_2,
     INFO_3,
+    CONCERT_TEXT
 } from '../../constants/info'
 
 import concertText from '../../resources/concertText.png'
@@ -25,7 +26,7 @@ import phoneIcon from '../../resources/phoneIcon.png'
 const TextMain = (props) => {
     return (
         <TextBlock isMobile={props.isMobile}>
-            <ConcertText isMobile={props.isMobile} src={concertText} />
+            <ConcertText isMobile={props.isMobile} >{CONCERT_TEXT}</ConcertText>
             <ContactText isMobile={props.isMobile}>{CONTACT_TEXT}</ContactText>
             <NumberBlock isMobile={props.isMobile}>
                 <svg width="400" height="102" viewBox="0 0 400 102" fill="none" xmlns="http://www.w3.org/2000/svg">

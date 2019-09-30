@@ -15,10 +15,19 @@ export const Wrapper = styled.div`
     `}
 `
 
-export const ConcertText = styled.img`
-    width: 45vw;
+export const ConcertText = styled.h1`
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #0DEDD1 33%, #9C27A6 66%, #9C27A6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     ${props => props.isMobile && css`
-        width: 90vw
+        margin-top: 1vh;
+        font-size: 1.3em;
     `}
 `
 
@@ -81,9 +90,9 @@ export const NumberIcon = styled.img`
 
 `
 
-export const ContactText = styled.div`
+export const ContactText = styled.h2`
     color: white;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin: 20px auto;
 
     ${props => props.isMobile && css`
