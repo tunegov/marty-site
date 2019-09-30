@@ -6,20 +6,22 @@ import { Wrapper, FooterSection } from '../styled/Footer'
 import Phone from '../styled/Phone'
 import Social from '../components/Common/Social'
 import DesignerLogo from '../components/Footer/DesignerLogo'
+import Support from '../components/Footer/Support'
 
 const Footer = (props) => {
     return (
         <>
-            <Social hide={!props.isMobile} isMobile={props.isMobile} width="null" />
+            <Support isMobile={props.isMobile} />
+            <Social hide={!props.isMobile} isMobile={props.isMobile} soundCloud width="null" />
             <Wrapper isMobile={props.isMobile}>
                 <FooterSection left isMobile={props.isMobile} >
-                    <DesignerLogo />
+                    {/* <DesignerLogo /> */}
                 </FooterSection>
                 <FooterSection isMobile={props.isMobile} >
                     <Phone isMobile={props.isMobile} href={`tel:${PHONE}`}>{PHONE}</Phone>
                 </FooterSection>
                 <FooterSection right hide={props.isMobile} >
-                    <Social isMobile={props.isMobile} width="null" />
+                    {/* <Social isMobile={props.isMobile} width="null" /> */}
                 </FooterSection>
             </Wrapper>
         </>

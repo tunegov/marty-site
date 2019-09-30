@@ -7,7 +7,8 @@ import {
     NumberBlock,
     ContactText,
     InfoBlock,
-    InfoText
+    InfoText,
+    NumberIcon
 } from '../../styled/Main'
 
 import {
@@ -19,6 +20,7 @@ import {
 } from '../../constants/info'
 
 import concertText from '../../resources/concertText.png'
+import phoneIcon from '../../resources/phoneIcon.png'
 
 const TextMain = (props) => {
     return (
@@ -35,7 +37,10 @@ const TextMain = (props) => {
                         </linearGradient>
                     </defs>
                 </svg>
-                <NumberText isMobile={props.isMobile} href={`tel:${PHONE}`}>{PHONE}</NumberText>
+                <NumberText isMobile={props.isMobile} href={`tel:${PHONE}`}>
+                    <NumberIcon src={phoneIcon} isMobile={props.isMobile} />
+                    {PHONE}
+                </NumberText>
             </NumberBlock>
             <InfoBlock isMobile={props.isMobile}>
                 <InfoText isMobile={props.isMobile}>{INFO_1}</InfoText>

@@ -9,8 +9,8 @@ export const Wrapper = styled.div`
     ${props => css`
         ${props.vertical ? 'height: 200px; width: 30px; flex-direction: column;' : 'height: 30px; width: 200px; justify-content: space-between;'}
         ${props.absolute && 'position: absolute; top: 20px; right: 20px;'}
-        ${props.width ? 'width: ' + props.width + ';' : ''}
-    `}
+        `}
+    ${props => props.width && css`${!props.vertical ? 'width: ' : 'height: '}${props.width}`}
 
     ${props => props.hide && 'display: none;'}
     ${props => props.isMobile && !props.absolute && css`

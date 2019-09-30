@@ -5,11 +5,12 @@ import AboutText from '../components/About/AboutText'
 import LeftImage from '../components/About/LeftImage'
 import RightImage from '../components/About/RightImage'
 import Video from '../components/About/Video'
+import SoundCloud from '../components/About/SoundCloud'
 
-import { Wrapper, Content } from '../styled/About'
+import { Wrapper, Content, MusicWrapper } from '../styled/About'
 
 const About = (props) => {
-    return (
+    return (<>
         <Wrapper isMobile={props.isMobile}>
             {!props.isMobile && <RightImage />}
             {!props.isMobile && <LeftImage />}
@@ -19,7 +20,12 @@ const About = (props) => {
                 <div />
                 <Video isMobile={props.isMobile} />
             </Content>
+            <MusicWrapper isMobile={props.isMobile}>
+                <SoundCloud isMobile={props.isMobile} />
+            </MusicWrapper>
         </Wrapper>
+
+    </>
     )
 }
 

@@ -1,19 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e5b5ed7f28e9cdc58fa73531be9c0bb6",
+    "revision": "647d6e54753cf5e0e62bc288fc3f5872",
     "url": "/index.html"
   },
   {
-    "revision": "87cef1d1f2ad568d5b65",
+    "revision": "9541f9da71bcacc1e454",
     "url": "/static/css/2.266e55a5.chunk.css"
   },
   {
-    "revision": "87cef1d1f2ad568d5b65",
-    "url": "/static/js/2.f136b6c3.chunk.js"
+    "revision": "67f36aaa4f2640bc8389",
+    "url": "/static/css/main.b322b823.chunk.css"
   },
   {
-    "revision": "c38479ff1a19b073f0a9",
-    "url": "/static/js/main.f509f06e.chunk.js"
+    "revision": "9541f9da71bcacc1e454",
+    "url": "/static/js/2.4d7590f6.chunk.js"
+  },
+  {
+    "revision": "67f36aaa4f2640bc8389",
+    "url": "/static/js/main.1eda8fc5.chunk.js"
   },
   {
     "revision": "ec0e13d3681294db6ff7",
@@ -32,6 +36,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/concertText.62fe35c6.png"
   },
   {
+    "revision": "93434d06f72741d81d37be08c7538f5d",
+    "url": "/static/media/customWear.93434d06.png"
+  },
+  {
     "revision": "a8da0047378747c34f6bb4b601e88058",
     "url": "/static/media/icon_dots.a8da0047.png"
   },
@@ -42,5 +50,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "42e71f9fc041a9a5a954335279939ec3",
     "url": "/static/media/marty.42e71f9f.png"
+  },
+  {
+    "revision": "f82681629b79216a9f827a5c2a4d85dd",
+    "url": "/static/media/martySound.f8268162.png"
+  },
+  {
+    "revision": "c2588159e35b07d384634a98d72bf69f",
+    "url": "/static/media/phoneIcon.c2588159.png"
+  },
+  {
+    "revision": "a711585fbc817693e6ff321a5942248f",
+    "url": "/static/media/soundcloud.a711585f.png"
   }
 ]);

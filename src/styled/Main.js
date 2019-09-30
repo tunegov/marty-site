@@ -48,7 +48,7 @@ export const NumberBlock = styled.div`
 export const NumberText = styled.a`
     position: absolute;
     top: 30px;
-    left 60px;
+    left 35px;
     font-size: 2em;
     color: white;
 
@@ -63,6 +63,22 @@ export const NumberText = styled.a`
         color: white;
         text-decoration: none;
     }
+`
+
+export const NumberIcon = styled.img`
+    margin-right: 10px;
+
+    ${props => props.isMobile ? css`
+        width: 30px;
+        height: 30px;
+    `:
+        css`
+            width: 40px;
+            height: 40px;
+        `
+    }
+
+
 `
 
 export const ContactText = styled.div`

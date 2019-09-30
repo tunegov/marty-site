@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.div`
     position: relative;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 `
 
 export const TextWrapper = styled.div`
@@ -86,5 +86,14 @@ export const Content = styled.div`
         z-index: 999;
         position: relative;
     `}
+`
 
+export const MusicWrapper = styled.div`
+    ${props => props.isMobile ? css`
+        padding: 3vh 5vw 1vh 5vw;
+    ` : css`
+        padding: 5vh 10vw;
+        z-index: 999;
+        position: relative;
+    `}
 `

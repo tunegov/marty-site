@@ -3,12 +3,21 @@ import React, { memo } from 'react'
 import { Wrapper } from '../../styled/Social'
 import SocialIcon from './SocialIcon'
 
-import { instagramUrl, youtubeUrl, vkUrl, fbUrl } from '../../constants/info'
+import {
+    instagramUrl,
+    youtubeUrl,
+    vkUrl,
+    fbUrl,
+    telegramUrl,
+    soundcloudUrl,
+} from '../../constants/info'
 
 import instagramIcon from '../../resources/instagram.png'
 import youtubeIcon from '../../resources/youtube.png'
 import vkIcon from '../../resources/vk.png'
 import facebookIcon from '../../resources/facebook.png'
+import telegramIcon from '../../resources/telegram.png'
+import soundcloudIcon from '../../resources/soundcloud.png'
 
 const Social = (props) => {
     return (
@@ -19,6 +28,13 @@ const Social = (props) => {
             absolute={props.absolute}
             isMobile={props.isMobile}
         >
+            {props.soundCloud ?
+                <SocialIcon
+                    href={soundcloudUrl}
+                    src={soundcloudIcon}
+                    isMobile={props.isMobile}
+                />
+                : null}
             <SocialIcon
                 href={instagramUrl}
                 src={instagramIcon}
@@ -37,6 +53,11 @@ const Social = (props) => {
             <SocialIcon
                 href={fbUrl}
                 src={facebookIcon}
+                isMobile={props.isMobile}
+            />
+            <SocialIcon
+                href={telegramUrl}
+                src={telegramIcon}
                 isMobile={props.isMobile}
             />
         </Wrapper>
