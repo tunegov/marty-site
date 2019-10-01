@@ -14,7 +14,7 @@ const Footer = (props) => {
             <Support isMobile={props.isMobile} />
             <Social hide={!props.isMobile} isMobile={props.isMobile} soundCloud width="null" />
             <Wrapper isMobile={props.isMobile}>
-                <FooterSection left isMobile={props.isMobile} >
+                <FooterSection left isMobile={props.isMobile} hide={props.isMobile}>
                     {/* <DesignerLogo /> */}
                 </FooterSection>
                 <FooterSection isMobile={props.isMobile} >

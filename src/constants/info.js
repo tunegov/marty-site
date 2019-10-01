@@ -14,6 +14,7 @@ export const vkUrl = 'https://www.vk.com/martymusic_official'
 export const fbUrl = 'https://www.facebook.com/martymusiqofficial'
 export const telegramUrl = 'https://www.t.me/martyTV'
 export const soundcloudUrl = 'https://soundcloud.com/martymusicofficial'
+export const linktreeUrl = 'https://linktr.ee/marty_tv_'
 
 export const designerUrl = 'https://www.instagram.com/zaycev.design/'
 export const customWearUrl = 'https://custom-wear.com.ua/'

@@ -12,6 +12,7 @@ export const Wrapper = styled.footer`
     ${props => props.isMobile && css`
         height: auto;
         padding: 1vh 5vw 4vh 5vw ;
+        justify-content: center;
     `}
 `
 
