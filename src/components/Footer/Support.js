@@ -7,12 +7,13 @@ import {
     Icon,
     IconWrapper,
     Text,
+    IconBack
 } from '../../styled/Support'
 import {
     designerUrl,
     customWearUrl,
     supportText,
-    linktreeUrl
+    bndUrl
 } from '../../constants/info'
 
 import logoDesigner from '../../resources/logoDesigner.png'
@@ -45,17 +46,20 @@ const Support = (props) => {
             </Wrapper>
             <IconFixed
                 isMobile={props.isMobile}
-                href={linktreeUrl}
+                href={bndUrl}
                 target="_blank"
                 rel="noopener noreferrer"
             >
                 <div className="text">Слушать</div>
-                <IconBig
+                <IconBack
                     animate={animate}
-
                     isMobile={props.isMobile}
-                    src={lintreeLogo}
-                />
+                >
+                    <IconBig
+                        isMobile={props.isMobile}
+                        src={"https://band.link/_nuxt/img/1bf7e37.svg"}
+                    />
+                </IconBack>
             </IconFixed>
         </>
     )

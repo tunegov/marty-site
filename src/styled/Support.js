@@ -18,12 +18,12 @@ export const IconFixed = styled.a`
     &:hover {
         text-decoration: none;
         
-        > div {
+        > .text {
             display: block;
         }
     }
 
-    > div {
+    > .text {
         display: none;
         color: white;
         text-decoration: none;
@@ -50,13 +50,22 @@ export const Icon = styled.img`
     object-fit: contain;
 `
 
-export const IconBig = styled.img`
-    width: auto;
-    object-fit: contain;
+export const IconBack = styled.div`
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 40px;
     z-index: 9000000;
 
-    
+    ${props => props.isMobile ? css`
+        width: 55px;
+        height: 55px;
+    ` : css`
+        width: 75px;
+        height: 75px;
+    `}
+
     &:hover {
         animation: bloop 1s linear;
     }
@@ -65,11 +74,15 @@ export const IconBig = styled.img`
         animation: bloop 1s linear;
         animation-iteration-count: 3;
     `}
+`
 
+export const IconBig = styled.img`
+    object-fit: contain;
+    
     ${props => props.isMobile ? css`
-        height: 50px;
+        width: 30px;
     ` : css`
-        height: 65px;
+        width: 40px;
     `}
 `
 
