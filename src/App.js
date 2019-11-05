@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ConcurrentMode } from 'react';
+import React, { useState, useEffect } from 'react';
 import { hot } from 'react-hot-loader'
 
 import './App.css'
