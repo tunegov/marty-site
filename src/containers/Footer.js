@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, Suspense } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import { PHONE } from '../constants/info'
@@ -10,7 +10,7 @@ import Support from '../components/Footer/Support'
 
 const Footer = (props) => {
     return (
-        <>
+        <Suspense fallback={null}>
             <Support isMobile={props.isMobile} />
             <Social hide={!props.isMobile} isMobile={props.isMobile} soundCloud width="null" />
             <Wrapper isMobile={props.isMobile}>
@@ -24,7 +24,7 @@ const Footer = (props) => {
                     {/* <Social isMobile={props.isMobile} width="null" /> */}
                 </FooterSection>
             </Wrapper>
-        </>
+        </Suspense>
     )
 }
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ConcurrentMode } from 'react';
 import { hot } from 'react-hot-loader'
 
 import './App.css'
@@ -17,14 +17,16 @@ function App() {
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowSizeChange);
-
   }, [])
+
   return (
-    <Body>
-      <Main isMobile={isMobile} />
-      <About isMobile={isMobile} />
-      <Footer isMobile={isMobile} />
-    </Body>
+    <>
+      <Body>
+        <Main isMobile={isMobile} />
+        <About isMobile={isMobile} />
+        <Footer isMobile={isMobile} />
+      </Body>
+    </>
   );
 }
 
