@@ -35,11 +35,11 @@ const TextMain = (props) => {
             <ContactText isMobile={props.isMobile}>{CONTACT_TEXT}</ContactText>
             <NumberBlock isMobile={props.isMobile}>
                 <svg width="400" height="102" viewBox="0 0 400 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M200 2H398V100H2V51" stroke="url(#paint0_linear)" stroke-width="4" />
+                    <path d="M200 2H398V100H2V51" stroke="url(#paint0_linear)" strokeWidth="4" />
                     <defs>
                         <linearGradient id="paint0_linear" x1="2" y1="2" x2="393.079" y2="139.859" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#2D2461" />
-                            <stop offset="1" stop-color="#05E3C8" />
+                            <stop stopColor="#2D2461" />
+                            <stop offset="1" stopColor="#05E3C8" />
                         </linearGradient>
                     </defs>
                 </svg>

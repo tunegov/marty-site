@@ -18,7 +18,6 @@ import {
 
 import logoDesigner from '../../resources/logoDesigner.png'
 import customWear from '../../resources/customWear.png'
-import lintreeLogo from '../../resources/linktree.png'
 
 const Support = (props) => {
     const [animate, setAnimate] = useState(false)

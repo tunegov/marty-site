@@ -1,5 +1,4 @@
 import React, { memo } from 'react'
-import Plx from 'react-plx';
 
 import AboutText from '../components/About/AboutText'
 import LeftImage from '../components/About/LeftImage'

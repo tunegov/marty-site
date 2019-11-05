@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { TextWrapper, TextBlock, TextTitle } from '../../styled/About'
 
@@ -24,11 +24,11 @@ const AboutText = (props) => {
             {!props.isMobile &&
                 <svg width={width} height={height} viewBox={`0 0 738 383`} fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d)">
-                        <path d="M731 187.5V3H7V372H188" stroke="#ADFDF3" stroke-width="5" />
+                        <path d="M731 187.5V3H7V372H188" stroke="#ADFDF3" strokeWidth="5" />
                     </g>
                     <defs>
-                        <filter id="filter0_d" x="0.5" y="0.5" width="738" height="383" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <filter id="filter0_d" x="0.5" y="0.5" width="738" height="383" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix" />
                             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
                             <feOffset dy="4" />
                             <feGaussianBlur stdDeviation="2" />
