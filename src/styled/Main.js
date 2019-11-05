@@ -36,7 +36,7 @@ export const ContactMeBlock = styled.div`
     width: 400px;
     text-align: center;
     position: relative;
-    background: linear-gradient(45deg, #0DEDD1 33%, #9C27A6 66%, #9C27A6);
+    background: linear-gradient(45deg, #9C27A6 66%, #9C27A6);
 
     ${props => props.isMobile && css`
         margin: 2vh auto 0 auto;
@@ -50,7 +50,7 @@ export const ContactMeText = styled.a`
     width: 100%;
     display: block;
     font-size: 2em;
-    font-weight: 800;
+    font-weight: 500;
     text-transform: uppercase;
     color: white !important;
 
