@@ -6,6 +6,8 @@ import {
     ConcertText,
     NumberBlock,
     ContactText,
+    ContactMeText,
+    ContactMeBlock,
     InfoBlock,
     InfoText,
     NumberIcon
@@ -18,7 +20,9 @@ import {
     INFO_2,
     INFO_3,
     CONCERT_TEXT,
-    clubAddress
+    CONTACT_ME_TEXT,
+    clubAddress,
+    formUrl
 } from '../../constants/info'
 
 import concertText from '../../resources/concertText.png'
@@ -44,6 +48,18 @@ const TextMain = (props) => {
                     {PHONE}
                 </NumberText>
             </NumberBlock>
+            <ContactMeBlock
+                 isMobile={props.isMobile}
+            >
+                <ContactMeText 
+                    href={formUrl} 
+                    isMobile={props.isMobile}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {CONTACT_ME_TEXT}
+                </ContactMeText>
+            </ContactMeBlock>
             <InfoBlock isMobile={props.isMobile}>
                 <InfoText
                     // href={clubAddress}

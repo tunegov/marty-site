@@ -31,6 +31,34 @@ export const ConcertText = styled.h1`
     `}
 `
 
+export const ContactMeBlock = styled.div`
+    margin: 5vh auto 0 auto;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(45deg, #0DEDD1 33%, #9C27A6 66%, #9C27A6);
+
+    ${props => props.isMobile && css`
+        margin: 2vh auto 0 auto;
+        zoom: 70%;
+    `}
+`
+
+export const ContactMeText = styled.a`
+    text-align: center;
+    padding: 1vh 0;
+    width: 100%;
+    display: block;
+    font-size: 2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white !important;
+
+    ${props => props.isMobile && css`
+        font-size: 1.8em;
+    `}
+`
+
 export const TextBlock = styled.div`
     margin-top: 20vh;
     display: flex;
