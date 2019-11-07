@@ -19,6 +19,7 @@ export const bndUrl = 'https://ffm.to/ykpv26r'
 
 export const designerUrl = 'https://www.instagram.com/zaycev.design/'
 export const customWearUrl = 'https://custom-wear.com.ua/'
+export const wifiBarUrl = 'https://wi-fi-bar.com/'
 
 export const formUrl = 'https://forms.gle/e2Ff72aoejpXixMJ6'
 

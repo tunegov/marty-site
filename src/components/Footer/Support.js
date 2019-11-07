@@ -12,12 +12,14 @@ import {
 import {
     designerUrl,
     customWearUrl,
+    wifiBarUrl,
     supportText,
     bndUrl
 } from '../../constants/info'
 
 import logoDesigner from '../../resources/logoDesigner.png'
 import customWear from '../../resources/customWear.png'
+import wifiBar from '../../resources/wifiBar2.png'
 
 const Support = (props) => {
     const [animate, setAnimate] = useState(false)
@@ -40,6 +42,11 @@ const Support = (props) => {
                 <IconWrapper href={customWearUrl} target="_blank" rel="noopener noreferrer">
                     <Icon
                         src={customWear}
+                    />
+                </IconWrapper>
+                <IconWrapper href={customWearUrl} target="_blank" rel="noopener noreferrer">
+                    <Icon
+                        src={wifiBar}
                     />
                 </IconWrapper>
             </Wrapper>
