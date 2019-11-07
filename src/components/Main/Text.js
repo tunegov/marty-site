@@ -29,6 +29,11 @@ import concertText from '../../resources/concertText.png'
 import phoneIcon from '../../resources/phoneIcon.png'
 
 const TextMain = (props) => {
+
+    const onPurchase = () => {
+        window.fbq('track', 'Purchase');
+    }
+
     return (
         <TextBlock isMobile={props.isMobile}>
             <ConcertText isMobile={props.isMobile} >{CONCERT_TEXT}</ConcertText>
@@ -49,7 +54,8 @@ const TextMain = (props) => {
                 </NumberText>
             </NumberBlock>
             <ContactMeBlock
-                 isMobile={props.isMobile}
+                onClick={onPurchase}
+                isMobile={props.isMobile}
             >
                 <ContactMeText 
                     href={formUrl} 
